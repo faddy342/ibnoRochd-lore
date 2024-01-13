@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+  scroll-behavior: smooth;
+}
+*::-webkit-scrollbar {
+  display: none;
+}
+body {
+  background-color: #121212;
+  color: #908d96;
+}
+body *::selection {
+  background-color: #908d96;
+  color: #121212;
+}
+header {
+  position: fixed;
+  top: 25px;
+  left: 50%;
+  transform: translatex(-50%);
+  z-index: 100000;
+}
+.nav {
+  background-color: #a688fa;
+  padding: 15px;
+  border-radius: 50px;
+}
+.nav-links {
+  display: flex;
+  list-style: none;
+}
+.nav-link a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  margin: 0 15px;
+  white-space: nowrap;
+}
+.nav-link a:hover {
+  opacity: 0.6;
+}
+.container {
+  margin: 0 auto;
+  width: 80%;
+}
+#intro {
+  padding-top: 150px;
+}
+#intro h1 {
+  font-size: 50px;
+  margin-bottom: 25px;
+}
+#intro p {
+  font-size: 25px;
+}
+.filler {
+  height: 500vh;
+}
+
+.character-container {
+  scroll-padding-top: 0;
+  width: 100%;
+  display: flex;
+  gap: 100px;
+}
+.character-container:nth-child(2n + 1) {
+  flex-direction: row-reverse;
+}
+.text {
+  width: 100%;
+  padding: 50vh 0;
+}
+.text h1 {
+  font-size: 50px;
+  color: #a688fa;
+}
+.text h1::selection {
+  background-color: #a688fa;
+  color: #121212;
+}
+.text p {
+  font-size: 25px;
+  padding: 25px 0;
+}
+.pic {
+  width: 100%;
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.pic div {
+  background-color: white;
+  width: 80%;
+  aspect-ratio: 1;
+  border-radius: 25px;
+}
